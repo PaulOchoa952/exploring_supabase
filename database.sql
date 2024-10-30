@@ -49,16 +49,3 @@ VALUES
 (10, 'Dr. Anderson', '2024-11-25', '10:00:00', 'Cardiology Check', 'Scheduled');
 
 --get done the dump backup
-/*
-# Step 1: Create backup directory inside the container
-docker exec my_postgres mkdir -p /backup
-
-# Step 2: Create the backup
-docker exec my_postgres pg_dump -U postgres -d pacientes -f /backup/my_database_backup.sql
-
-# Step 3: Verify the backup file creation
-docker exec my_postgres ls /backup
-
-# Step 4: Copy the backup to your host (make sure the target directory exists)
-docker cp my_postgres:/backup/my_database_backup.sql C:\Users\p_a_u\Documents\ios
-*/
